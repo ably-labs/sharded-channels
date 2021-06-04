@@ -16,8 +16,9 @@ function channelShard(options, namespace, num) {
 
   // Publish to a random shard channel. Currently uses round robin for simplicity
   shardedChannel.publish = function(name, data, callback) {
-    this.channels[this.currentPub].publish(name, data, callback);
+    let tmpNum = this.currentPub;
     this.currentPub = (this.currentPub + 1) % this.num;
+    this.channels[tmpNum].publish(name, data, (err) => { callback(err, tmpNum) });
   };
 
   // Subscribe to all shard channels
