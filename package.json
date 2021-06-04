@@ -1,0 +1,26 @@
+{
+  "name": "ably-sharded-channels",
+  "version": "1.0.0",
+  "description": "Simple implementation which shards communications across multiple Ably Channels",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ably-labs/sharded-channels.git"
+  },
+  "keywords": [
+    "ably"
+  ],
+  "author": "Tom Camp",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ably-labs/sharded-channels/issues"
+  },
+  "homepage": "https://github.com/ably-labs/sharded-channels#readme",
+  "dependencies": {
+    "ably": "^1.2.10",
+    "dotenv": "^10.0.0"
+  }
+}
