@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/ably-labs/sharded-channels#readme",
   "dependencies": {
-    "ably": "^1.2.10",
+    "ably": "^1.2.41",
     "dotenv": "^10.0.0"
   }
 }
